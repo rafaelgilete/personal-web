@@ -4,8 +4,8 @@
   "description": "Personal website",
   "main": "index.html",
   "scripts": {
-    "dev": "postcss src/index.css -o src/public/dist.css --watch",
-    "build": "postcss src/index.css -o src/public/dist.css"
+    "dev": "postcss index.css -o public/dist.css --watch",
+    "build": "postcss index.css -o public/dist.css"
   },
   "keywords": [],
   "author": "Rafael Gilete",
