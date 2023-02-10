@@ -1,2 +1,6 @@
+# FILES
+dist.css
+package-*.json
+
+# DIRS
 node_modules
-package-lock.json
