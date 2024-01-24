@@ -1,21 +1,72 @@
 {
-  "name": "personal-web",
-  "version": "1.0.0",
-  "description": "Personal website",
-  "main": "index.html",
-  "scripts": {
-    "dev": "postcss index.css -o public/dist.css --watch",
-    "build": "postcss index.css -o public/dist.css"
-  },
-  "keywords": [],
-  "author": "Rafael Gilete",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "10.4.13",
-    "cssnano": "5.1.14",
-    "daisyui": "2.46.1",
-    "postcss": "8.4.20",
-    "postcss-cli": "10.1.0",
-    "tailwindcss": "3.2.4"
-  }
+    "author": "Rafael Gilete Mogena",
+    "dependencies": {
+        "@astrojs/tailwind": "5.1.0",
+        "astro": "4.1.2",
+        "tailwindcss": "3.4.1"
+    },
+    "description": "Personal website",
+    "devDependencies": {
+        "eslint": "8.56.0",
+        "eslint-config-prettier": "9.1.0",
+        "eslint-config-standard": "17.1.0",
+        "eslint-plugin-astro": "0.31.3",
+        "prettier": "3.2.2",
+        "prettier-plugin-astro": "0.12.3",
+        "prettier-plugin-tailwindcss": "0.5.11"
+    },
+    "engines": {
+        "node": ">=20.0.0",
+        "npm": ">=10.0.0"
+    },
+    "eslintConfig": {
+        "env": {
+            "browser": true,
+            "node": true
+        },
+        "extends": [
+            "standard",
+            "prettier"
+        ],
+        "overrides": [
+            {
+                "files": "*.astro",
+                "parser": "astro-eslint-parser",
+                "plugins": [
+                    "astro"
+                ]
+            }
+        ]
+    },
+    "license": "LGPL-3.0-only",
+    "main": "index.html",
+    "name": "personal-web",
+    "prettier": {
+        "overrides": [
+            {
+                "files": "*.astro",
+                "options": {
+                    "parser": "astro"
+                }
+            }
+        ],
+        "plugins": [
+            "prettier-plugin-astro",
+            "prettier-plugin-tailwindcss"
+        ],
+        "printWidth": 120,
+        "quoteProps": "consistent",
+        "singleQuote": true,
+        "tabWidth": 4
+    },
+    "scripts": {
+        "build": "astro build",
+        "dev": "astro dev",
+        "format": "prettier --write .",
+        "lint": "eslint --ext .astro,.js,.mjs --ignore-path .gitignore .",
+        "preview": "astro preview",
+        "start": "astro dev"
+    },
+    "type": "module",
+    "version": "2.0.0"
 }

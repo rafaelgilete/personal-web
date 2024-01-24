@@ -1,6 +1,3 @@
-# FILES
-dist.css
-package-*.json
-
-# DIRS
+# FOLDERS
+dist
 node_modules
