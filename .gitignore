@@ -1,3 +1,6 @@
+# DOT FOLDERS
+.astro
+
 # FOLDERS
 dist
 node_modules
