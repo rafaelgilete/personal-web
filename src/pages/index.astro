@@ -54,7 +54,7 @@ const date = new Date();
     </header>
     <main class="space-y-6">
         <h2 class="text-lg text-white md:text-2xl">Projects</h2>
-        <span
+        <div
             aria-label="Unnamed"
             class="group/card block space-y-4 rounded border border-dashed border-slate-300 bg-slate-900 p-4 duration-300 hover:border-opacity-70 md:space-y-6"
         >
@@ -79,7 +79,33 @@ const date = new Date();
                     <ExternalLinkSvg />
                 </span>
             </div>
-        </span>
+        </div>
+        <div
+            aria-label="refuelwise"
+            class="group/card block space-y-4 rounded border border-dashed border-slate-300 bg-slate-900 p-4 duration-300 hover:border-opacity-70 md:space-y-6"
+        >
+            <h3 class="font-medium text-white md:text-lg">Refuelwise</h3>
+            <p class="text-pretty text-sm text-slate-300 md:text-base">
+                Web application to find the cheapest pump based on the user's location and save on each refuelling.
+            </p>
+            <div class="flex items-center gap-x-2 py-2">
+                <span
+                    class="inline-flex items-center rounded bg-emerald-100 px-2 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-700/20 md:text-sm"
+                >
+                    Active
+                </span>
+                <span
+                    class="inline-flex items-center rounded bg-indigo-100 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/20 md:text-sm"
+                >
+                    Developing
+                </span>
+                <span
+                    class="ml-auto inline-flex items-center text-slate-300 opacity-80 duration-300 group-hover/card:opacity-100"
+                >
+                    <ExternalLinkSvg />
+                </span>
+            </div>
+        </div>
     </main>
     <footer class="mt-auto text-center text-slate-300">
         <p>© {date.getFullYear()}. Made with ❤ in Spain.</p>
