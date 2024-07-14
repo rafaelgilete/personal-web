@@ -7,10 +7,6 @@
     },
     "description": "Personal website",
     "devDependencies": {
-        "eslint": "8.56.0",
-        "eslint-config-prettier": "9.1.0",
-        "eslint-config-standard": "17.1.0",
-        "eslint-plugin-astro": "0.31.3",
         "prettier": "3.3.3",
         "prettier-plugin-astro": "0.14.0",
         "prettier-plugin-tailwindcss": "0.6.5"
@@ -18,25 +14,6 @@
     "engines": {
         "node": ">=20.0.0",
         "npm": ">=10.0.0"
-    },
-    "eslintConfig": {
-        "env": {
-            "browser": true,
-            "node": true
-        },
-        "extends": [
-            "standard",
-            "prettier"
-        ],
-        "overrides": [
-            {
-                "files": "*.astro",
-                "parser": "astro-eslint-parser",
-                "plugins": [
-                    "astro"
-                ]
-            }
-        ]
     },
     "license": "LGPL-3.0-only",
     "main": "index.html",
@@ -63,7 +40,6 @@
         "build": "astro build",
         "dev": "astro dev",
         "format": "prettier --write .",
-        "lint": "eslint --ext .astro,.js,.mjs --ignore-path .gitignore .",
         "preview": "astro preview",
         "start": "astro dev"
     },
